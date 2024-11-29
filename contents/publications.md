@@ -10,7 +10,7 @@
 
 - X. Yang, X. Yu, C. Zhang, <strong>S. Li</strong>, and Q. Niu (2021). MineGPS: Battery-Free Localization Base Station for Coal Mine Environment. <strong>IEEE Communications Letters</strong>. [[Paper]](https://doi.org/10.1109/LCOMM.2021.3081593)
  -->
-Jingxuan Li, Yuning Yang, Shengqi Yang, Yizhou Zhao, and Ying Nian Wu (2024). \href{https://doi.org/10.48550/arXiv.2411.11479}{\textbf{Quantifying Preferences of Vision-Language Models via Value Decomposition in Social Media Contexts}}. \textit{arXiv preprint arXiv:2411.11479}.
+Jingxuan Li, Yuning Yang, Shengqi Yang, Yizhou Zhao, and Ying Nian Wu (2024). Quantifying Preferences of Vision-Language Models via Value Decomposition in Social Media Contexts. [[Paper]](https://doi.org/10.48550/arXiv.2411.11479)
 
 
 ## UCLA, Researcher on VLM's Latent and Induced Persona
