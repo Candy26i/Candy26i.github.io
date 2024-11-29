@@ -15,7 +15,6 @@ Jingxuan Li, Yuning Yang, Shengqi Yang, Yizhou Zhao, and Ying Nian Wu (2024). \h
 
 ## UCLA, Researcher on VLM's Latent and Induced Persona
 **Advisor:** Dr. Yizhou Zhao; Prof. Yingnian Wu  
-**Dates:** [Specify your dates here]
 
 - Designed benchmark approaches utilizing social media platforms’ datasets to investigate different VLMs’ latent personas.
 - Created pipelines that automatically extract screenshots of shorts, information from social media, and responses from VLMs, then store and manage the database using back-end SQL and AWS S3.
