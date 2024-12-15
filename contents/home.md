@@ -2,7 +2,7 @@
 [![Jingxuan](https://img.shields.io/badge/main-github-blue?logo=github)](https://github.com/Candy26i)
 
 Currently a fourth year student in UCLA majoring in Math of Computation.
-[View My CV](Candy26i.github.io/static/assets/PHD_CV_Jingxuan_Li (1).pdf)
+[View My CV](PHD_CV_Jingxuan_Li.pdf)
 
 #### Email
 madili@g.ucla.edu
