@@ -5,7 +5,7 @@ Graduated with an undergraduate degree from UCLA, majoring in Mathematics of Com
 [View My CV](https://candy26i.github.io/PHD_CV_Jingxuan_Li.pdf)
 
 #### Email
-madili@g.ucla.edu or jingxuanli2030@u.northwester.edu
+madili@g.ucla.edu or jingxuanli2030@u.northwestern.edu
 
 #### Education
 B.S., Math of Computation, University of California, Los Angeles, 2021-2025
