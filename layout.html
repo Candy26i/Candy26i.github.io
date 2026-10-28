@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{PAGE_TITLE}}</title>
+  <meta name="description" content="{{META_DESCRIPTION}}">
+  <meta name="author" content="{{NAME}}">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="{{SITE_URL}}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{PAGE_TITLE}}">
+  <meta property="og:description" content="{{META_DESCRIPTION}}">
+  <meta property="og:url" content="{{SITE_URL}}">
+  <meta property="og:image" content="{{SITE_URL}}static/assets/img/jingxuan-li-northwestern.jpg">
+  <link rel="icon" href="static/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="static/css/main.css">
+  <script type="application/ld+json">{{PERSON_JSON}}</script>
+</head>
+<body id="page-top">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-inner">
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
+        <a href="#research">Research</a>
+        <a href="#education">Background</a>
+      </nav>
+    </div>
+  </header>
+  <div class="page-layout">
+    <aside class="profile" aria-label="Profile and contact">
+      <img class="portrait" src="static/assets/img/jingxuan-li-northwestern.jpg" alt="Portrait of Jingxuan Li" width="168" height="210" fetchpriority="high">
+      <div class="profile-details">
+        <p class="profile-role">Second-year PhD student</p>
+        <p class="profile-department">Statistics and Data Science<br>Northwestern University</p>
+        <p class="profile-location">Evanston, Illinois</p>
+        <div class="profile-links">
+          <a href="mailto:{{EMAIL}}">Email</a>
+          <a href="{{GITHUB_URL}}">GitHub</a>
+          <a href="{{CV_URL}}" target="_blank" rel="noopener" aria-label="View CV, PDF, {{CV_VERSION}}, opens in a new tab">CV</a>
+        </div>
+        <p class="cv-version">CV last updated {{CV_VERSION}}</p>
+      </div>
+    </aside>
+    <main id="main-content">
+      <section id="about" class="about" aria-labelledby="name">
+        <h1 id="name">{{NAME}} <span class="chinese-name" lang="zh">{{NAME_ZH}}</span></h1>
+        <div class="intro prose">{{HOME}}</div>
+      </section>
+      <section id="publications" class="section" aria-labelledby="publications-heading">
+        <div class="section-heading"><h2 id="publications-heading">Publications</h2></div>
+        <div class="publication-list">{{PUBLICATIONS}}</div>
+      </section>
+      <section id="research" class="section" aria-labelledby="research-heading">
+        <div class="section-heading"><h2 id="research-heading">Research experience</h2></div>
+        <div class="research-list prose">{{RESEARCH}}</div>
+      </section>
+      <section id="education" class="section" aria-labelledby="education-heading">
+        <div class="section-heading"><h2 id="education-heading">Education</h2></div>
+        <div class="education-list prose">{{EDUCATION}}</div>
+        <div class="honors" id="awards"><h3>Honors &amp; awards</h3>{{AWARDS}}</div>
+      </section>
+      <section id="experience" class="section" aria-labelledby="experience-heading">
+        <div class="section-heading"><h2 id="experience-heading">Industry experience</h2></div>
+        <div class="experience-list prose">{{EXPERIENCE}}</div>
+      </section>
+    </main>
+  </div>
+  <footer class="site-footer">
+    <p>© {{YEAR}} {{NAME}}</p>
+    <p>Updated {{UPDATED}}<span aria-hidden="true"> · </span><a href="https://github.com/candy26i/candy26i.github.io">Source</a><span aria-hidden="true"> · </span><a href="LICENSE">License</a></p>
+  </footer>
+</body>
+</html>

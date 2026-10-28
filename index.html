@@ -1,187 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Academic Webpage" />
-    <meta name="author" content="senli1073" />
-    <title id="title"></title>
-
-    <!-- Icon -->
-    <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
-
-    <!-- Bootstrap icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-
-    <!-- Google fonts-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap"
-        rel="stylesheet" />
-
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link type="text/css" href="static/css/styles.css" rel="stylesheet" />
-    <link type="text/css" href="static/css/main.css" rel="stylesheet" />
-
-    <!-- Bootstrap core JS-->
-    <script type="text/javascript" src="static/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Bootstrap core JS-->
-    <script type="text/javascript" src="static/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- Markdown -->
-    <script type="text/javascript" src="static/js/marked.min.js"></script>
-    
-    <!-- Markdown -->
-    <script type="text/javascript" src="static/js/marked.min.js"></script>
-
-    <!-- Mathematics -->
-    <script>
-        // See https://docs.mathjax.org/en/latest/index.html for more details.
-        MathJax = {
-            tex: {
-                packages: {},              // extensions to use
-                inlineMath: [              // start/end delimiter pairs for in-line math
-                    ['$', '$'],
-                    ['\\(', '\\)']
-                ],
-                displayMath: [             // start/end delimiter pairs for display math
-                    ['$$', '$$'],
-                    ['\\[', '\\]']
-                ],
-                processEscapes: false,      // use \$ to produce a literal dollar sign
-                processEnvironments: true, // process \begin{xxx}...\end{xxx} outside math mode
-                processRefs: true,         // process \ref{...} outside of math mode
-                digits: /^(?:[0-9]+(?:\{,\}[0-9]{3})*(?:\.[0-9]*)?|\.[0-9]+)/,    // pattern for recognizing numbers
-                tags: 'all',              // or 'ams' or 'all'
-                tagSide: 'right',          // side for \tag macros
-                tagIndent: '0.8em',        // amount to indent tags
-                useLabelIds: true,         // use label name rather than tag for ids
-                maxMacros: 10000,          // maximum number of macro substitutions per expression
-                maxBuffer: 5 * 1024,       // maximum size for the internal TeX string (5K)
-                // baseURL:                   // URL for use with links to tags (when there is a <base> tag in effect)
-                // (document.getElementsByTagName('base').length === 0) ? '' : String(document.location).replace(/#.*$/, ''),
-                formatError:               // function called when TeX syntax errors occur
-                    (jax, err) => jax.formatError(err)
-            }
-        };
-    </script>
-    <script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    
-    <!-- Core JS-->
-    <script type="text/javascript" src="static/js/scripts.js"></script>
-    <script type="text/javascript" src="static/js/js-yaml.min.js"></script>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jingxuan Li | Northwestern University</title>
+  <meta name="description" content="Jingxuan Li is a second-year PhD student in Statistics and Data Science at Northwestern University, working on multi-agent systems, LLM reasoning, and vision-language model evaluation.">
+  <meta name="author" content="Jingxuan Li">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://candy26i.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jingxuan Li | Northwestern University">
+  <meta property="og:description" content="Jingxuan Li is a second-year PhD student in Statistics and Data Science at Northwestern University, working on multi-agent systems, LLM reasoning, and vision-language model evaluation.">
+  <meta property="og:url" content="https://candy26i.github.io/">
+  <meta property="og:image" content="https://candy26i.github.io/static/assets/img/jingxuan-li-northwestern.jpg">
+  <link rel="icon" href="static/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="static/css/main.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Jingxuan Li","alternateName":"李婧瑄","url":"https://candy26i.github.io/","image":"https://candy26i.github.io/static/assets/img/jingxuan-li-northwestern.jpg","jobTitle":"Second-year PhD Student in Statistics and Data Science","affiliation":{"@type":"CollegeOrUniversity","name":"Northwestern University"},"alumniOf":{"@type":"CollegeOrUniversity","name":"University of California, Los Angeles"},"sameAs":["https://github.com/Candy26i"]}</script>
 </head>
-
 <body id="page-top">
-    <!-- Navigation-->
-    <nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
-        <div class="container px-5">
-            <a id="page-top-title" class="navbar-brand fw-bold" href="#page-top"></a>
-            <!-- <a href="#page-top"><img src="static/assets/img/CUMT_LOGO.svg" style="width: 11rem;"></a> -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                MENU
-                <i class="bi-list"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#page-top">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#publications">PUBLICATIONS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#awards">AWARDS</a>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Top Section -->
-    <section class="top-section" style="background-image: url('static/assets/img/background.jpeg');">
-        <div class="top-section-content">
-            <div class="container px-5">
-                <h2 id="top-section-bg-text" class="text-white display-3 lh-1 font-alt"></h2>
-            </div>
-        </div>
-    </section>
-    <!-- Top Section -->
-
-    <!-- Photo -->
-    <div class="container px-5">
-        <div id="avatar">
-            <img class="shadow" src="static/assets/img/photojx.jpg">
-        </div>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-inner">
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
+        <a href="#research">Research</a>
+        <a href="#education">Background</a>
+      </nav>
     </div>
-    <!-- Photo -->
-    
-    <!-- Home -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="home">
-        <div class="container px-5">
-            <header>
-                <h2 id="home-subtitle">Welcome!</h2>
-            </header>
-            <div class="main-body" id="home-md">
-                <p>
-                    You can view or download my CV here: 
-                    <a href="static/assets/cv.pdf" target="_blank" class="btn btn-primary">
-                        View My CV
-                    </a>
-                </p>
-            </div>
+  </header>
+  <div class="page-layout">
+    <aside class="profile" aria-label="Profile and contact">
+      <img class="portrait" src="static/assets/img/jingxuan-li-northwestern.jpg" alt="Portrait of Jingxuan Li" width="168" height="210" fetchpriority="high">
+      <div class="profile-details">
+        <p class="profile-role">Second-year PhD student</p>
+        <p class="profile-department">Statistics and Data Science<br>Northwestern University</p>
+        <p class="profile-location">Evanston, Illinois</p>
+        <div class="profile-links">
+          <a href="mailto:jingxuanli2030@u.northwestern.edu">Email</a>
+          <a href="https://github.com/Candy26i">GitHub</a>
+          <a href="Jingxuan_Li_CV.pdf" target="_blank" rel="noopener" aria-label="View CV, PDF, August 2026, opens in a new tab">CV</a>
         </div>
-    </section>
-    
-    <!-- Home -->
+        <p class="cv-version">CV last updated August 2026</p>
+      </div>
+    </aside>
+    <main id="main-content">
+      <section id="about" class="about" aria-labelledby="name">
+        <h1 id="name">Jingxuan Li <span class="chinese-name" lang="zh">李婧瑄</span></h1>
+        <div class="intro prose"><p>I&#39;m a second-year PhD student in Statistics and Data Science at Northwestern University. I received my B.S. in Mathematics of Computation from the University of California, Los Angeles, in 2025.</p>
+<p>I work on LLM agents and vision-language model evaluation with Professor Ying Nian Wu at UCLA. My current project is about delegation in multi-agent systems: when asking another model for help improves an answer, and when it makes things worse.</p>
+</div>
+      </section>
+      <section id="publications" class="section" aria-labelledby="publications-heading">
+        <div class="section-heading"><h2 id="publications-heading">Publications</h2></div>
+        <div class="publication-list"><article class="publication">
+  <h3><a href="https://openreview.net/forum?id=Mpl470ufM0">MARGENT: Measuring the Marginal Value of Delegation in Agentic Systems</a></h3>
+  <p class="publication-authors">Yuning Yang<sup>*</sup>, <strong>Jingxuan Li<sup>*</sup></strong>, Yizhou Zhao, Linfan Zhang, Longhao Jin, Manling Li, Han Liu, and Ying Nian Wu</p>
+  <p class="publication-venue"><em>Accepted at the NeurIPS 2026 RAAAI Workshop</em> (also submitted to ACL ARR)</p>
+  <p>Learning when to call another agent and when to keep the current answer.</p>
+  <div class="publication-links"><a href="https://openreview.net/forum?id=Mpl470ufM0">Paper</a><a href="https://resource-aware-workshop.github.io/">Workshop</a></div>
+</article>
 
-    <!-- Publications -->
-    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="publications">
-        <div class="container px-5">
-            <header>
-                <h2 id="publications-subtitle"><i class="bi bi-file-text-fill"></i>&nbsp;RESEARCH EXPERIENCE</h2>
-            </header>
-            <div class="main-body" id="publications-md"></div>
+<article class="publication">
+  <h3><a href="https://aclanthology.org/2025.acl-long.472/">Value-Spectrum: Quantifying Preferences of Vision-Language Models via Value Decomposition in Social Media Contexts</a></h3>
+  <p class="publication-authors"><strong>Jingxuan Li<sup>*</sup></strong>, Yuning Yang<sup>*</sup>, Shengqi Yang, Linfan Zhang, and Ying Nian Wu</p>
+  <p class="publication-venue"><em>ACL 2025, Main Conference</em></p>
+  <p>Measuring VLMs' value preferences and how they change under different persona prompts.</p>
+  <div class="publication-links"><a href="https://aclanthology.org/2025.acl-long.472/">Paper</a><a href="https://aclanthology.org/2025.acl-long.472.pdf">PDF</a><a href="https://github.com/Jeremyyny/Value-Spectrum">Project</a></div>
+</article>
+</div>
+      </section>
+      <section id="research" class="section" aria-labelledby="research-heading">
+        <div class="section-heading"><h2 id="research-heading">Research experience</h2></div>
+        <div class="research-list prose"><article class="research-item">
+  <h3>MARGENT</h3>
+  <p class="entry-meta">May 2025–present · Advisor: Ying Nian Wu, UCLA</p>
+  <p>I build paired reasoning branches to compare an extra agent call with committing to the current answer. I use these comparisons to train a manager that routes between extractor, reasoner, and verifier agents, and evaluate it on MedQA, MMLU-Pro, GPQA, and AQuA-RAT.</p>
+</article>
 
-        </div>
-    </section>
-    <!-- Publications  -->
+<article class="research-item">
+  <h3>Value-Spectrum</h3>
+  <p class="entry-meta">September 2023–May 2025 · Advisor: Ying Nian Wu, UCLA</p>
+  <p>I built pipelines to collect social media imagery and model responses, and used Schwartz's human value dimensions to compare VLM preferences. I also developed prompts for assigning personas to models and tested how consistently different VLMs followed those personas.</p>
+</article>
+</div>
+      </section>
+      <section id="education" class="section" aria-labelledby="education-heading">
+        <div class="section-heading"><h2 id="education-heading">Education</h2></div>
+        <div class="education-list prose"><article class="education-entry">
+  <div class="entry-header"><h3>Northwestern University</h3><span class="entry-date">2025–present</span></div>
+  <p>PhD in Statistics and Data Science</p>
+  <p class="entry-detail">Evanston, Illinois</p>
+</article>
 
-    <!-- Awards -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="awards">
-        <div class="container px-5">
-            <header>
-                <h2 id="awards-subtitle"><i class="bi bi-award-fill"></i>AWARDS </h2>
-            </header>
-            <div class="main-body" id="awards-md"></div>
+<article class="education-entry">
+  <div class="entry-header"><h3>University of California, Los Angeles</h3><span class="entry-date">2021–2025</span></div>
+  <p>B.S. in Mathematics of Computation</p>
+  <p class="entry-detail">Los Angeles, California</p>
+</article>
+</div>
+        <div class="honors" id="awards"><h3>Honors &amp; awards</h3><ul>
+<li>Oda Abe Scholarship, UCLA</li>
+<li>Dean’s Honors List, UCLA · 2021–2024</li>
+</ul>
+</div>
+      </section>
+      <section id="experience" class="section" aria-labelledby="experience-heading">
+        <div class="section-heading"><h2 id="experience-heading">Industry experience</h2></div>
+        <div class="experience-list prose"><article class="experience-entry">
+  <div class="entry-header"><h3>Tencent · Big Data Research Intern</h3><span class="entry-date">Aug–Sep 2024</span></div>
+  <p>Cloud &amp; Smart Industries Group, Beijing</p>
+  <p>Applied NLP and HunYuan-7B fine-tuning to match WiFi names with points of interest, contributing a geolocation pipeline to Tencent Maps.</p>
+</article>
 
-        </div>
-    </section>
-    <!-- Awards -->
-
-
-    <!-- Footer-->
-    <footer class="bg-bottom text-center py-5">
-        <div class="container px-5">
-            <div class="text-white-50 small">
-                <div id="copyright-text" class="mb-2"></div>
-                <a id="github-link" href="https://github.com/senli1073">Github</a>
-                <span class="mx-1">&middot;</span>
-                <a id="license-link" href="https://github.com/senli1073/senli1073.github.io/blob/main/LICENSE">License</a>
-            </div>
-        </div>
-    </footer>
-
+<article class="experience-entry">
+  <div class="entry-header"><h3>Tencent · Technical Research Intern</h3><span class="entry-date">Jul–Sep 2023</span></div>
+  <p>Cloud &amp; Smart Industries Group, Beijing</p>
+  <p>Developed mathematical consistency checks for geospatial records and improved the efficiency of the detection algorithms in Python.</p>
+</article>
+</div>
+      </section>
+    </main>
+  </div>
+  <footer class="site-footer">
+    <p>© 2026 Jingxuan Li</p>
+    <p>Updated October 2026<span aria-hidden="true"> · </span><a href="https://github.com/candy26i/candy26i.github.io">Source</a><span aria-hidden="true"> · </span><a href="LICENSE">License</a></p>
+  </footer>
 </body>
-
 </html>

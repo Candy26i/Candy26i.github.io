@@ -1,1 +1,2 @@
-- Oda Ade Scholarship, 2024.
+- Oda Abe Scholarship, UCLA
+- Dean’s Honors List, UCLA · 2021–2024

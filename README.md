@@ -1,69 +1,49 @@
+# Jingxuan Li — academic website
 
+Personal website for Jingxuan Li, PhD student in Statistics and Data Science at Northwestern University.
 
-![Github Forks](https://img.shields.io/github/forks/senli1073/senli1073.github.io?style=flat)
-![Github Stars](https://img.shields.io/github/stars/senli1073/senli1073.github.io?style=flat)
-![License](https://img.shields.io/github/license/senli1073/senli1073.github.io)
-![Last Commit](https://img.shields.io/github/last-commit/senli1073/senli1073.github.io)
+Live site: https://candy26i.github.io/
 
-# A simple Github Pages template for academic personal website.
+## Edit the content
 
-## Preview
-[![Screenshot of the Website](https://raw.githubusercontent.com/senli1073/senli1073.github.io/main/screenshot_full.png)](https://senli1073.github.io/)
+- `contents/home.md`: introduction and research interests
+- `contents/publications.md`: publication titles, authors, venues, summaries, and links
+- `contents/research.md`: research experience
+- `contents/education.md`: education
+- `contents/experience.md`: industry experience
+- `contents/awards.md`: honors
+- `contents/config.yml`: contact information, page metadata, CV path, and update dates
+- `layout.html`: page structure
+- `static/css/main.css`: responsive styles
 
+Run this after editing the source files (Node.js required; no package installation):
 
-## Introduction
-
-This is an academic personal website template based on [bootstrap](https://github.com/StartBootstrap/startbootstrap-new-age).
-
-The template is designed to integrate Markdown files as content input.  There's no need to compile the webpage before deployment.  Upon loading, the Markdown files are automatically parsed and embedded into the page.
-
-This template supports LaTeX formula input. You can use `$...$` and `\(...\)` as delimiters for inline-math, or use `$$...$$` and `\[...\]` as delimiters for display-math. Macros such as `\ref{...}`, `\eqref{...}`, and `\begin{equation}...\end{equation}` are also supported. See [MathJax](https://docs.mathjax.org/en/latest/index.html) for more details.
-
-:milky_way: Demo: https://senli1073.github.io/
-
-
-## Getting Start
-### 1. Fork this repository
-The repository name should be `<username>.github.io`, which will also be your website's URL.
-
-
-### 2. Edit page content
-
-(1) Go to the folder where you want to store your project, and clone the new repository:
-```
-git clone https://github.com/<username>/<username>.github.io.git
-```
-The directory structure is as follows:
-
-```.
-.
-├── contents
-└── static
-    ├── assets
-    │   └── img
-    ├── css
-    └── js
+```sh
+node scripts/build.cjs
 ```
 
-(2) Modify the content of each section, which corresponds to `contents/*.md`.
+The build reuses the Markdown and YAML parsers already bundled with this repository. Commit the generated `index.html` together with the edited sources. GitHub Pages serves it directly, so all text, navigation, publication entries, and links work without JavaScript or external fonts.
 
-(3) Adjust the title, copyright information, and other text of the website in `contents/config.yml`
+To check that the generated HTML is current:
 
-(4) Replace background image and photo with new ones for your web pages in `static/assets/img/`
-
-(5) Push it: 
-```
-git commit -am 'init'
-git push
+```sh
+node scripts/build.cjs --check
 ```
 
+## Preview locally
 
-### 3. Enjoy
+```sh
+python3 -m http.server 8000 --bind 127.0.0.1
+```
 
-Fire up a browser and go to `https://<username>.github.io`
+Open http://127.0.0.1:8000/. The generated page can also be opened directly as a local file. Keep the existing GitHub Pages configuration; this update requires no new hosting service or deployment framework.
 
+## CV
 
+The page links to `Jingxuan_Li_CV.pdf`, the existing August 2026 CV. This website update does not change the PDF. When replacing it in the future, update `cv_version` in `contents/config.yml` and rebuild.
 
-## License
+## Content notes
 
-Copyright Sen Li, 2023. Licensed under an MIT license. You can copy and mess with this template.
+The MARGENT author list follows the October 24, 2026 OpenReview submission revision; its venue is the NeurIPS 2026 **Workshop on Resource-Aware Agentic AI**, not the main conference. Value-Spectrum follows the [official ACL Anthology record](https://aclanthology.org/2025.acl-long.472/), including the full title and equal-contribution note. MARGENT’s equal-contribution markers for Yuning Yang and Jingxuan Li were confirmed by Jingxuan Li. Publication summaries describe the research rather than claiming unverified individual performance gains.
+
+Original template by Sen Li, under the [MIT license](LICENSE). Existing legacy assets and PDF filenames are retained so previously shared links continue to work.
