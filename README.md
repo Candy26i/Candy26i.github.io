@@ -40,7 +40,7 @@ Open http://127.0.0.1:8000/. The generated page can also be opened directly as a
 
 ## CV
 
-The page links to `Jingxuan_Li_CV.pdf`, the existing August 2026 CV. This website update does not change the PDF. When replacing it in the future, update `cv_version` in `contents/config.yml` and rebuild.
+The page links to `Jingxuan_Li_CV.pdf`, the two-page October 2026 CV. When replacing it in the future, update `cv_version` in `contents/config.yml` and rebuild.
 
 ## Content notes
 
